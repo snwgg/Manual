@@ -7,16 +7,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     padding: 20px;
     border: 2px solid #ffd700;
     border-radius: 10px;
     box-shadow: 0 0 20px #ffd700;
+    box-sizing: border-box;
 }
 
 header {
@@ -26,7 +28,8 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    word-wrap: break-word;
 }
 
 .subtitle {
@@ -50,6 +53,11 @@ h2 {
 .attire {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.attire div {
+    width: 48%;
 }
 
 .attire h3 {
